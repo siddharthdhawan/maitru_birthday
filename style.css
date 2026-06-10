@@ -1,0 +1,36 @@
+
+body{
+margin:0;background:linear-gradient(#f9d7df,#fff7f1);
+font-family:'Cormorant Garamond',serif;
+overflow:hidden;text-align:center;
+}
+.page{display:none;height:100vh;justify-content:center;align-items:center;flex-direction:column;padding:20px}
+.page.active{display:flex}
+.envelope{
+width:320px;height:220px;background:#f7b7c3;border-radius:10px;position:relative;
+box-shadow:0 10px 30px rgba(0,0,0,.2);
+}
+.envelope:before{
+content:'';position:absolute;top:0;left:0;border-left:160px solid transparent;
+border-right:160px solid transparent;border-top:110px solid #f2a8b7;
+}
+.seal{
+position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);
+background:gold;width:70px;height:70px;border-radius:50%;
+display:flex;align-items:center;justify-content:center;font-weight:bold;
+}
+.paper,.letter-preview{
+background:#fffdf5;padding:30px;max-width:700px;border-radius:10px;
+box-shadow:0 10px 30px rgba(0,0,0,.15);
+font-family:'Dancing Script',cursive;font-size:1.5rem;
+}
+button{
+padding:12px 24px;border:none;border-radius:30px;margin-top:20px;
+background:#ff7aa2;color:white;font-size:1rem;cursor:pointer;
+}
+.photo-layout img{
+width:220px;border:10px solid white;transform:rotate(5deg);
+box-shadow:0 5px 15px rgba(0,0,0,.2);
+}
+.cake{font-size:90px}
+h1,h2{color:#d14d72}
